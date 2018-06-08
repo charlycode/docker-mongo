@@ -6,7 +6,7 @@ services:
     container_name: mongo1
     image: bitnami/mongodb:latest
     ports:
-      - "27017:27017"
+      - "27019:27017"
     environment:
       - MONGODB_ROOT_PASSWORD=password
     volumes:
