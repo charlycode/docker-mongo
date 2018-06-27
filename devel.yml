@@ -9,6 +9,7 @@ services:
       - "27019:27017"
     environment:
       - MONGODB_ROOT_PASSWORD=password
+      - MONGODB_EXTRA_FLAGS=--profile=1 --slowms=1
     volumes:
       - /data/mongodb:/mongodb
 
@@ -20,5 +21,6 @@ services:
       - "27018:27017"
     environment:
       - MONGODB_ROOT_PASSWORD=password
+      - MONGODB_EXTRA_FLAGS=--profile=1 --slowms=1
     volumes:
       - /data/mongodb2:/mongodb
